@@ -1,9 +1,10 @@
-
+import { Htag } from 'components';
+import React from 'react';
 
 export default function Home() {
   return (
     <div>
-      test text
+      <Htag tag='h1'>Text</Htag>
     </div>
   );
 }
