@@ -32,3 +32,22 @@
 	color: var(--white);
 }
 
+.arrow {
+	display: inline-block;
+
+	margin-left: 10px;
+
+}
+
+.down {
+	transform: rotate(90deg);
+	transition: 0.2s;
+}
+
+.primary svg,
+.ghost:hover svg {
+	fill: var(--white);
+}
+
+
+
