@@ -4,16 +4,25 @@ import React, { useEffect, useState } from 'react';
 export default function Home() {
   const [counter, setCounter] = useState<number>(0);
 
+  // Not use
+  // if (counter > 0) {
+  //   useEffect(() => {
+  //     console.log('Counter' + counter);
+  //     return function cleanup() {
+  //       console.log('Unmount');
+  //     };
+  //   });
+  // }
+
   useEffect(() => {
-    console.log('Counter' + counter);
+    if (counter > 0) {
+      console.log('Counter' + counter);
+    }
     return function cleanup() {
       console.log('Unmount');
     };
   });
 
-  useEffect(() => {
-    console.log('Mounted');
-  }, []);
 
   return (
     <div>
